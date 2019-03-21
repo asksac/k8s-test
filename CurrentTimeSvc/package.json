@@ -1,0 +1,22 @@
+{
+  "name": "currenttimesvc",
+  "version": "1.0.0",
+  "description": "Service that returns current date/time via a REST-like API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "curl -X GET 'http://localhost:3000/time'"
+  },
+  "author": "Sachin Hamirwasia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
+  }
+}
