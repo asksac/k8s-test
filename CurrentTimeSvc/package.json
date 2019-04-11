@@ -1,11 +1,11 @@
 {
   "name": "currenttimesvc",
   "version": "1.0.0",
-  "description": "Service that returns current date/time via a REST-like API",
+  "description": "A dockerized service that returns current date/time via a RESTful API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "curl -X GET 'http://localhost:3000/time'"
+    "test": "mocha"
   },
   "author": "Sachin Hamirwasia",
   "license": "ISC",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
+    "request": "^2.88.0",
     "supertest": "^4.0.2"
   }
 }
