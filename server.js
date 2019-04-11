@@ -51,11 +51,12 @@ app.get('/time', (req, res) => {
 
 // default 404 handler 
 app.use(function (req, res, next) {
-  res.status(404).send("We're sorry, that resource was not found!"); 
+  res.status(404).send('We are sorry, that resource was not found!'); 
 }); 
 
 var server = app.listen(3000, function () {
-  console.log('service running on port: ', server.address().port); 
+  logger.info('service running on port: ' + server.address().port); 
 });
 
-module.exports = app; 
+// server object must be exported to enable mocha unit testing
+module.exports = server; 
