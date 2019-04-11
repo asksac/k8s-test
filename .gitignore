@@ -12,3 +12,4 @@ yarn-error.log*
 
 # MacOS specific
 .DS_Store
+.vscode/
